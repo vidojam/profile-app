@@ -1,14 +1,17 @@
+import { useState } from "react";
 import { Col, Container, Row, Button, Modal } from "react-bootstrap";
 
 
 export default function About() {
+
+  const [imgUrl, setImgUrl] = useState("https://picsum.photos/200/300" );
 
   return (
     <main>
       <Container >
         <Row >
           <Col sm={12}>
-            <img src="https://picsum.photos/200/300" 
+            <img src="imgUrl" 
             className="rounded-circle"
             alt="Profile" />
           </Col>
